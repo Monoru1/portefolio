@@ -1,0 +1,190 @@
+/* projets.css */
+
+/* Style de base pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    position: relative; /* Nécessaire pour positionner la liste déroulante */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Liste déroulante */
+header nav ul li.dropdown .dropdown-menu {
+    display: none; /* Cachée par défaut */
+    position: absolute;
+    top: 100%; /* Juste en dessous du lien parent */
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+header nav ul li.dropdown .dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li.dropdown .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+header nav ul li.dropdown .dropdown-menu li a:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Afficher la liste déroulante au survol */
+header nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Contenu principal */
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+/* Section Projet */
+.project {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+    transform: scale(1.1); /* Effet de profondeur au survol */
+}
+
+.project-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-description h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.project-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Couleur de surbrillance */
+}

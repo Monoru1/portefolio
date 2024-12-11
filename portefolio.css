@@ -1,0 +1,160 @@
+/* Reset de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Section de la page */
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil {
+    background-image: url('P1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.accueil .welcome-text h1 {
+    font-size: 60px;
+}
+
+.apropos {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+.apropos img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.competences {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.competences .project {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.competences .project img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.contact {
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e6c200;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #FFD700;
+}

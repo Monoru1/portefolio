@@ -1,0 +1,199 @@
+/* apropos.css */
+
+/* Style de base pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    position: relative; /* Nécessaire pour positionner la liste déroulante */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Liste déroulante */
+header nav ul li.dropdown .dropdown-menu {
+    display: none; /* Cachée par défaut */
+    position: absolute;
+    top: 100%; /* Juste en dessous du lien parent */
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+header nav ul li.dropdown .dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li.dropdown .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+header nav ul li.dropdown .dropdown-menu li a:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Afficher la liste déroulante au survol */
+header nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Section À Propos */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: #fff;
+}
+
+.text-section {
+    width: 50%;
+}
+
+.text-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.photo-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo-section img:hover {
+    transform: scale(1.1); /* Effet de profondeur au survol */
+}
+
+/* Section CV */
+.cv-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cv-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cv-button {
+    text-decoration: none;
+    color: white;
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #e6c200;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FFD700; /* Couleur de surbrillance */
+}
